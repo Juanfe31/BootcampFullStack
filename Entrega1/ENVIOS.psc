@@ -4,12 +4,9 @@ Algoritmo ENVIOS
 	Definir cantidad Como Entero
 	Definir peso Como Real
 	Definir lugar Como Cadena
-	definir precioLugar Como Real
-	
+	Definir precioLugar Como Real
 	Definir  Bdescuento Como Logico
-	
 	Definir  precioFinal Como Real
-	
 	Definir precioImpuesto Como Real
 	Definir descuentoCupon Como Real
 	Definir descuentoCantidad Como Real
@@ -21,6 +18,9 @@ Algoritmo ENVIOS
 	precioLugarD[3]=1.8
 	precioLugarD[4]=2
 	precioLugarD[5]=1.5
+	
+	Escribir "Bienvenido a la calculadora de precios de envio"
+	Escribir "//////////////////////////////////////"
 	
 	Escribir "Ingrese el precio del producto"
 	Leer precioOriginal
@@ -65,7 +65,7 @@ Algoritmo ENVIOS
 			precioFinal<-precioFinal-descuentoCantidad
 	Fin Segun
 	
-	Escribir "Escriba su ubicación (validos: Nueva York, Medellin, CDMX, Paris, Madrid)"
+	Escribir "Escriba su ubicación (validos: Nueva York, Medellin, CDMX, Paris, Madrid, si es otra ubicación se le cobrará más)"
 	Leer lugar
 	Segun lugar Hacer
 		"Nueva York":
